@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="./assets/icons/BS_squared.png" sizes="32x32">
+        <title>Téo Spigaroli - Portfolio</title>
+        <meta name="google-site-verification" content="bQNBvyW3uhvUd-tlKFfyvfrz0wG10B-TDz9rWShBs4I" />
+        <meta name="description"
+            content=>
+        <meta name="author" content="Benjamin Sevault">
+        <meta name="copyright" content="Benjamin Sevault">
+
+        <link rel="stylesheet" href="./style/global.css" />
+        <link rel="stylesheet" href="./style/navbar.css">
+        <link rel="stylesheet" href="./style/banner.css">
+        <link rel="stylesheet" href="./style/timeline.css">
+        <link rel="stylesheet" href="./style/skills.css">
+        <link rel="stylesheet" href="./style/works.css">
+        <link rel="stylesheet" href="./style/dropdown.css">
+        <link rel="stylesheet" href="./style/watch.css">
+        <link rel="stylesheet" href="./style/contact.css">
+        <link rel="stylesheet" href="./style/footer.css">
+        <link rel="stylesheet" href="./style/responsive.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+        <script defer src="./script/main.js"></script>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <header id="header">
+            <div class="logo">
+                <div class="socials">
+                    <a href="https://www.linkedin.com/" title="Lien vers linkedin"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                            <g>
+                                <path
+                                    d="M77.796 214.238V98.986H39.488v115.252H77.8zM58.65 83.253c13.356 0 21.671-8.85 21.671-19.91-.25-11.312-8.315-19.915-21.417-19.915-13.111 0-21.674 8.603-21.674 19.914 0 11.06 8.312 19.91 21.169 19.91h.248zM99 214.238h38.305v-64.355c0-3.44.25-6.889 1.262-9.346 2.768-6.885 9.071-14.012 19.656-14.012 13.858 0 19.405 10.568 19.405 26.063v61.65h38.304v-66.082c0-35.399-18.896-51.872-44.099-51.872-20.663 0-29.738 11.549-34.78 19.415h.255V98.99H99.002c.5 10.812-.003 115.252-.003 115.252z" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <a href="#accueil" class="name">Téo Spigaroli</a>
+            </div>
+
+            <div id="hamburger" tabindex="0" role="button" aria-roledescription="mobile menu open/close button"
+                aria-label="open/close menu button" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li class="accueil active"><a href="#accueil" onclick="toggleMenu()">Accueil</a></li>
+                    <li class="profil"><a href="#profil" onclick="toggleMenu()">Profil</a></li>
+                    <li class="BTS SIO"><a href="#BTS" onclick="toggleMenu()">BTS SIO</a></li>
+                    <li class="xpPro"><a href="#xpPro" onclick="toggleMenu()">Epreuve E4 / E5</a></li>
+                    <li class="veille"><a href="#veille" onclick="toggleMenu()">Veille téchnologique</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <section class="banner" id="accueil">
+            <div>
+                <h1>
+                    <span>Teo Spigaroli</span>
+                </h1>
+                <h2>BTS SIO option SISR</h2>
+                <a href="#profil" class="btn">En savoir plus</a>
+            </div>
+        </section>
+
+        <!-- Profil -->
+        <section class="about" id="profil">
+            <div class="heading">
+                <h2>Profil</h2>
+            </div>
+            <div class="content">
+                <div class="contentBx w50">
+                    <h3>A propos de moi</h3>
+                    <p>
+                        Je m'appelle Téo spigaroli et je prépare actuellement un BTS SIO option SISR en deux ans
+                    </p>
+                    <h3>Parcours professionnel</h3>
+                    <p>
+                        J'ai obtenu un Bac Economique et Social, option Mathématique avancée en 2019
+                    </p>
+                    <p>
+                        Puis en 2020, J'ai fait 2 années de préparation au concours de l'Ecole National Supérieur de la Marine à Bordeaux
+                    </p>
+                    <p>
+                        Après c'est 2 ans, j'ai fait une année de Faculté en science de l'ingénieur a la Sorbonne
+                    </p>
+                    <p>
+                        Passionné depuis l’adolescence par les nouvelles technologies, je me suis naturellement orienté
+                        vers les métiers du numérique
+                    </p>
+                    <h3>Projet professionnel</h3>
+                    <p>
+                        Désirant atteindre un haut niveau de qualification, je souhaite poursuivre mon projet de
+                        formation jusqu’à l’obtention d’un diplôme de niveau Bac +5 en Cybersécurité
+                    </p>
+                    <h3>Alternance</h3>
+                    <p>La société PALAIS DES THES a été créée le 15 décembre 1986.
+                    <br>
+                    Sa forme juridique est SA à conseil d'administration (s.a.i.). Son domaine d’activité est "autres commerces de détail alimentaires en magasin spécialisé". En 2021, elle était catégorisée entreprise de taille intermédiaire. Elle possédait 250 à 499 salariés.</p>
+                    <div class="dropdown">
+                        <a href="./assets/docs/teospigaroli-cv.pdf.pdf" id="syntheseE4" target="_blank">
+                            <span>
+                                <i class="fa fa-eye"></i>
+                                Consulter CV
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="BTS">
+            <div class="heading">
+                <h2>BTS SIO SISR</h2>
+            </div>
+            <div class="content">
+                <div class="contentBx w50">
+                    <p>
+                         L'élève du BTS SIO option SISR acquiert les compétences de trois domaines d'activités dont deux en commun avec le BTS SIO option SLAM 
+                    </p>
+                    <h3>Support et mise à disposition de services informatiques</h3>
+                    <p>
+                        L'élève sera capable de répondre aux attentes des utilisateurs en assurant la disponibilité des services informatiques existants.<br> 
+                        il sera aussi en mesure de prendre en compte les besoins informatiques dans l'entreprise et d'accompagner la transformation numérique des services informatiques, tout en maintenant son employabilité.<br>
+
+                        Il acquiert ainsi les compétences pour gérer le patrimoine informatique, répondre aux incidents, développer la présence de l'entreprise sur le Web, organiser son propre développement professionnel.
+                    </p>
+                    <h3>Cybersécurité des services informatiques</h3>
+                    <p>
+                         L'élève est formé à la cybersécurité et à son intégration dans l'entreprise en tenant compte des dimensions techniques, organisationnelles, juridiques...<br>Il obtient ainsi des compétences sur la protection des données et l'identité numérique de l'entreprise, la sécurisation des équipements et usages des utilisateurs. Option SISR: il est formé à la cybersécurisation d'une infrastructure réseau, d'un système ou d'un service informatique. 
+                    </p>
+                    <h3>Option SISR</h3>
+                    <p>
+                     Administration des systèmes et des réseaux: le titulaire participera à l'administration des systèmes et du réseau, il sera capable de modifier ou d'adapter les solutions d'infrastructure ainsi que la qualité de service des équipements du réseaux.<br>
+                      Il acquiert ainsi les compétences pour concevoir une solution d'infrastructure réseau, l'installer, la tester et la déployer. L'élève apprend aussi à administrer et superviser ce réseau.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Réalisations -->
+        <section class="work" id="xpPro">	
+            <div class="heading white">
+                <h2>Epreuve E4 / E5</h2>
+                <br>
+                <div class="contentBx">
+                    <p>
+                        Au cours de ma préparation au BTS SIO option SISR, j'ai réalisé plusieurs projets lors de mon alternance ou d'ateliers professionnels encadrés par l'équipe pédagogique de mon centre de formation. Ces réalisations en contexte professionnel ou pédagogique m'ont permis d'acquérir les
+                        blocs de compétences du réferentiel du BTS SIO.
+                    </p>
+                </div>
+                <div class="dropdown-wrapper">
+                    <div class="dropdown">
+                        <a href="./assets/docs/bts/Tableau de compétence E4.pdf" id="syntheseE4"
+                            target="_blank">
+                            <span>
+                                <i class="fa fa-eye"></i>
+                                Tableau de synthèse épreuve E4
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="contentBx">
+                    <h3>Projets professionels en entreprise</h3>
+                    <button class="acc-btn">Mastérisation Ordinateur Windows 10/11</button>
+                    <div class="acc-content">
+                        <p>- Préparation des ordinateurs pour les nouveaux arrivant au siège.</p>
+                        <p>
+                        <div class="dropdown">
+                            <span class="dropdown-btn"><i class="fa fa-download"></i>Documents</span>
+                            <div class="dropdown-content">
+                                <a href="assets/docs/ap0/Master W11.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Procédure Masterisation ordinateur
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <button class="acc-btn">Renouvellement du Parc de TPE</button>
+                    <div class="acc-content">
+                        <p>- Changement des anciens tpe présent en boutique avec des neufs et configuration avec le logiciel de caisse.</p>
+                        <p>
+                        <div class="dropdown">
+                            <span class="dropdown-btn"><i class="fa fa-download"></i>Documents</span>
+                            <div class="dropdown-content">
+                                <a href="assets/docs/ap0/Procédure Configuration TPE.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Procédure configuration TPE
+                                </a>
+                                <a href="assets/docs/ap0/Procédure Configuration Caisse.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Procédure configuration du logiciel de caisse
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <h3>Projets professionels en formation</h3>
+
+                    <button class="acc-btn">Active Diretory</button>
+                    <div class="acc-content">
+                        <div class="missions-comp">
+                            <div class="missions">
+                                <h4>Activité réalisée</h4>
+                                <ul>
+                                    <p>Ce projet s'inscrit dans le contexte suivant :</p>
+                                    <li>Mettre en place l'active directory, pour la gestion d'un parc informatique.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+                        <div class="dropdown">
+
+                            <span class="dropdown-btn"><i class="fa fa-download"></i>Documents</span>
+                            <div class="dropdown-content">
+                                <a href="assets/docs/ap0/Procédure AD.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Procédure Active Directory
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <button class="acc-btn">Gestionnaire Libre de Parc Informatique (GLPI)</button>
+                    <div class="acc-content">
+                        <div class="missions-comp">
+                            <div class="missions">
+                                <h4>Activité réalisée</h4>
+                                <ul>
+                                    <p>Ce projet s'inscrit dans le contexte suivant :</p>
+                                    <li>Mise en place et configuration d'un GLPI.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+                        <div class="dropdown">
+                            <span class="dropdown-btn"><i class="fa fa-download"></i>Documents</span>
+                            <div class="dropdown-content">
+                                <a href="assets/docs/ap0/Mission GLPI.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Procédure GLPI
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <button class="acc-btn">Wifi Radius</button>
+                    <div class="acc-content">
+                        <div class="missions-comp">
+                            <div class="missions">
+                                <h4>Activité réalisée</h4>
+                                <ul>
+                                    <p>Ce projet s'inscrit dans le contexte d'une présentation pour l'épreuve E5 :</p>
+                                    <li>Mise en place et configuration d'un certificat RADIUS pour le Wifi</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+                        <div class="dropdown">
+                            <span class="dropdown-btn"><i class="fa fa-download"></i>Documents</span>
+                            <div class="dropdown-content">
+                                <a href="assets/docs/ap1/Mise en place d’une authentification RADIUS.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Procédure Mise en place d’une authentification RADIUS
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <button class="acc-btn">HSRP (Hot Standby Router Protocol)</button>
+                    <div class="acc-content">
+                        <div class="missions-comp">
+                            <div class="missions">
+                                <h4>Activité réalisée</h4>
+                                <ul>
+                                    <p>Ce projet s'inscrit dans le contexte d'une présentation pour l'épreuve E5</p>
+                                    <li>Mise en place et configuration du protocole HSRP</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+                        <div class="dropdown">
+                            <span class="dropdown-btn"><i class="fa fa-download"></i>Documents</span>
+                            <div class="dropdown-content">
+                                <a href="assets/docs/ap1/Procédure HSRP - GLBP.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Procédure HSRP
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Veille technologique -->
+        <section class="veille" id="veille">
+            <div class="heading">
+                <h2>Veille technologique</h2>
+                <br>
+                <div class="contentBx">
+                    <p>La veille technologique constituée par l’ensemble des techniques visant à organiser de façon systématique la collecte, l’analyse, la diffusion de l’exploitation des informations techniques utiles à la sauvegarde et à la croissance des entreprises. 
+                    <br>
+                    <br>
+                    La veille technologique se doit de prévenir et alerter tout responsable d’un changement, d’une nouveauté ou d’une innovation qu’elle soit technique ou scientifique.
+                    Dès lors qu’elle peut modifier le paysage ou faire perdre / gagner un avantage économique, la veille devient critique et doit intervenir le plus tôt possible.
+                    <br>
+                    Plusieurs sites peuvent être consulté pour être informé sur la <b>Cybersécurité</b> comme la <a href="https://www.cnil.fr/fr/professionnel" target="Fenêtre défini">CNIL</a>, <a href="https://cyber.gouv.fr/actualites" target="Fenêtre défini"> le site du gouvernent</a> et <a href="https://www.usine-digitale.fr/cybersecurite/" target="Fenêtre défini">l'Usine Digitale</a><br>Aussi, il est possible de s'informer autrement que sur des sites, il y a des chaines youtube commme <a href="https://www.youtube.com/channel/UCWedHS9qKebauVIK2J7383g" target="_blank">Underscore
+                </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div>
+                <p>Téo SPIGAROLI</p>
+                <p>© 2024 All rights reserved</p>
+            </div>
+        </footer>
+    </body>
+    
+</html>
